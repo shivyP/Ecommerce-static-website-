@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>QTEC | Technology</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="indexStyle.css" type="text/css"/>
+        <link rel="stylesheet" href="navigation.css" type="text/css"/>
+        <link rel="stylesheet" href="audioStyle.css" type="text/css"/>
+        <link rel="stylesheet" href="mediaQuery.css" type="text/css"/>
+      
+        <script  type="text/javascript" src="animation.js" defer></script>
+        <script  type="text/javascript" src="accessibility.js" async></script> 
+        <script  type="text/javascript" src="basket.js" defer></script>
+        <script  type="text/javascript" src="mediaMobile.js" async></script>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    </head>
+
+      
+    
+    <body class="c">
+        <section class="bar">
+            <p class="fsize">
+                <a href="" id="increaseText">A+ |</a>
+                <a href="" id="resetText">A |</a>
+                <a href="" id="reduceText">A- |</a>
+                <a href="" id="blackBox">&#9632; </a>|
+                <a href="" id="whiteBox">&#9632; </a>
+            </p>
+        </section>
+        <section id="topContent">
+            <!--logo -->
+            
+            <header id="pageTop" class="fsize">  
+                <img class="logo" src="assets/logo2.png" alt="Company's Logo QTEC" > 
+                 <!-- in mobile view this will change to humburger -->
+                 <p id="humSymbol"> &#9776;</p>  
+                <nav class="productPages">
+                    <ul>
+                        <li class="presentPage"><a href="index.html">Home</a></li>
+                        <li><a href="watchPage.html" >Watches</a></li>
+                        <li><a href="cameraPage.html" >Camera</a></li>
+                        <li><a href="audioPage.html" >Speaker</a></li>
+                        <li><a href="headpPage.html" >Headphone</a></li>
+                       
+                    </ul>            
+                </nav>
+                <nav class="access">
+                    <ul>
+                        <li><a href="signIn.html" >Sign in</a></li>
+                        <li><a href="LogIn.html" >Log in</a></li>
+                        <li style="border:none;"><a href="#">
+                            <img class="cart" src="assets/cart.png" alt="List of selected products"></a>
+                        </li>
+                    </ul> 
+                </nav> 
+                
+            </header>
+        </section>
+
+        <!--Slide show -->
+        <section id="slideShow">
+            <!-- <span class="previous" >&#8882;</span> -->
+            <img class="productCover" title="fisrtImage" src="assets/cameraCover3.jpg">
+            <!-- <span class="next">&#8883;</span> -->
+            <article class="changeImage fsize">
+                <input type="radio" id="button1" name="button" > 
+                <label for="button1" ></label>     
+                <input type="radio"  id="button2" name="button" >
+                <label for="button2"></label>
+                <input type="radio" id="button3" name="button" >
+                <label for="button3"></label>            
+            </article>
+
+            <section id="camera" class="descStyle ">
+                <h2>Capture your memories!</h2>
+                <button type="button">Discover more</button><br><!--Need to use a onlick event -->
+                <span>We have the best collection of high quality cameras in wide range of prices.</span>
+            </section>
+            <section id="audio" class="desc descStyle">
+                <h2>You hear what you want!</h2>
+                <button type="button" >Discover more</button><br><!-- Need to use a onlick event  -->
+                <span>Look at our collection of devices specially designed to enchance your listening experince.</span>
+            </section>
+
+            <section id="watch" class="desc descStyle ">
+                <h2>An experince of new era!</h2>
+                <!-- <h2 class="secondH2">so spend it wisely!</h2> -->
+                <button type="button">Discover more</button><br> <!-- Need to use a onlick event  -->
+                <p>Discover our special collection of watches and find the one for you. </p>
+            </section>
+        </section>
+
+
+
+
+          <!-- baket contet-->
+        <aside id="basketCont" class="indexBasket">
+                
+            <section id="bContent">
+                <p id="title">
+                    Spend £60 to get free shipping
+                    <span>&times;</span>
+                </p>
+                <h3>Shopping Cart</h3>
+            
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity">2</p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                </section>
+                
+                <p class="pPrice">£30</p> 
+                </article>
+
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity">2</p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                </section>
+            
+                <p class="pPrice">£30</p> 
+                </article>
+
+
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity">2</p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                </section>
+                
+
+                <p class="pPrice">£30</p> 
+                </article>
+
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity"></p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                    </section>
+                
+                <p class="pPrice">£30</p> 
+                </article>
+                <section id="basBottom">
+                    <article  class="checkout">
+                    <h3>Subtotal</h3>
+                    <p id="totalCart">£30</p>
+                    </article>
+
+                    <article id="checkButton">
+                        <button type="button" >Checkout </button>
+                    </article>
+                </section>
+
+
+            </section>
+        </aside> 
+
+
+        
+    <!--Trending items display -->
+        <section id="proDisplay" class="fsize">
+            <h3 class="trending">Trending Items:</h3>
+            <section class="product watch"> 
+                <a href="watchPage.html">
+                    <img src="assets/watch1.png" title="Daniel Wellington watch" alt="Daniel Wellington watch with bule and red band.">
+                    <p>Daniel Wellington Watch</p>
+                    <p class="price"><b>£139.00</b></p>
+                </a>
+            </section>
+            <section class="product speaker"> 
+                <a href="audioPage.html">
+                    <img src="assets/speaker.png" title="Grey Speaker" alt="A grey and white flat speaker.">
+
+                    <p >Grey Speaker</p>
+                    <p class="price "><b >£30.00</b></p>
+                </a>
+            </section>
+            <section class="product camera"> 
+                <a href="cameraPage.html" >
+                    <img src="assets/camera.jpg" title="Cannon Camera" alt="A cannon black camera.">
+                    <p >Canon Camera EOS-800D</p>
+                    <p class="price"><b >£820.00</b></p>
+                </a>
+            </section>
+            <section class="product headphone"> 
+                <a href="headpPage.html">
+                    <img src="assets/headphones1.png" title="ATH headphone" alt="Black ATH-M50x headphone.">
+                    <p >ATH-M50x headphone</p>
+                    <p class="price"><b >£120.00</b></p>
+                </a>
+            </section>
+            
+        </section>
+
+        <section id="subscribe" class="fsize">
+            <h1>Stay in the loop</h1>
+            <p>Be the first one to know about all <br>
+            the new products and exclusive deals <br>
+            droping evey month.
+            </p>
+
+            <input type="email" name="email" id="emailSub" placeholder="Enter your email">
+            <button type="button" id="emailSubButton">&#8594;</button>
+        </section>
+
+      
+
+
+
+
+        <!-- Footer -->
+        <footer id="bottomPage">
+            <section id="footerContent" class="fsize">
+                <article id="ftLinks">
+                    <!--Links to other pages -->
+                    <ul >
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="watchPage.html" >Watch</a></li>
+                        <li><a href="cameraPage.html" >Camera</a></li>
+                        <li><a href="audioPage.html" >Speaker</a></li>
+                        <li><a href="headpPage.html" >Headphone</a></li>
+                    
+                    </ul>
+                </article>
+                <article id="author">
+                    <p><b>Author:</b>
+                        <br>Shivangi Prajapati,
+                        <br>Nottingham Trent University
+			<br>n0909947@my.ntu.ac.uk
+                    </p>
+                </article>
+                <article id="socialMedia">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/NottinghamTrentUniversity?fref=ts" target="_blank">
+                        <img src="assets/facebook.png" alt="Facebook" title="Facebook">
+                    </a>
+                    <!-- Twitter-->
+                    <a href="https://twitter.com/TrentUni" target="_blank">
+                        <img src="assets/twitter.png"  alt="Twitter" title="Twitter">
+                    </a>
+                    <!-- Youtube-->
+                    <a href="https://www.youtube.com/user/NottinghamTrentUni" target="_blank">
+                        <img src="assets/youtube.png"  alt="Youtube" title="Youtube">
+                    </a>
+                    
+                    <!-- Instagram-->
+                    <a href="https://www.instagram.com/nottinghamtrentuni/" target="_blank">
+                        <img src="assets/instagram.png"  alt="Instagram" title="Instagram">
+                    </a>
+                    <!--Linkedin-->
+                    <a href="https://www.linkedin.com/edu/school?id=12658" target="_blank">
+                        <img src="assets/linkedin.png"  alt="Linkedin" title="Linkedin">
+                    </a>
+                    <!--Snapchat-->
+                    <a href="https://www.snapchat.com/add/trentuni" target="_blank">
+                        <img src="assets/snapchat.png"  alt="Snapchat" title="Snapchat">
+                    </a>
+                
+                </article>
+                
+            </section>
+            <p>&copy; ntu.ac.uk 2022 | Designed by Shivangi Prajapati</p>      
+            
+        </footer>
+   
+
+    
+    </body>
+</html>

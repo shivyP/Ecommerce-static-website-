@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Audio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="navigation.css" type="text/css"/>
+        <link rel="stylesheet" href="audioStyle.css" type="text/css"/>
+        <link rel="stylesheet" href="mediaQuery.css" type="text/css"/>
+
+
+        <script  type="text/javascript" src="productPage.js" defer></script>
+        <script  type="text/javascript" src="accessibility.js" async></script>
+        <script  type="text/javascript" src="basket.js" defer></script>
+        <script  type="text/javascript" src="mediaMobile.js" async></script>
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body class="c">
+        
+        <section class="bar">
+            <p>
+                <a href="" id="increaseText">A+ |</a>
+                <a href="" id="resetText">A |</a>
+                <a href="" id="reduceText">A- |</a>
+                <a href="" id="blackBox">&#9632; </a>|
+                <a href="" id="whiteBox">&#9632; </a>
+            </p>
+        </section>
+        <section id="topContent">
+            <!--logo -->
+                
+            <header id="pageTop">  
+            
+                <img class="logo" src="assets/logo2.png" alt="Company's Logo QTEC"> 
+                 <!-- in mobile view this will change to humburger -->
+                 <p id="humSymbol"> &#9776;</p>   
+                <nav class="productPages">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="watchPage.html" >Watches</a></li>
+                        <li><a href="cameraPage.html" >Camera</a></li>
+                        <li class="presentPage"><a href="audioPage.html" >Speaker</a></li>
+                        <li><a href="headpPage.html" >Headphone</a></li>
+                    
+                    </ul>            
+                </nav>
+                <nav class="access">
+                    <ul>
+                        <li><a href="signIn.html" >Sign in</a></li>
+                        <li><a href="LogIn.html" >Log in</a></li>
+                        <li style="border:none;"><a href="#">
+                            <img class="cart" src="assets/cart.png" alt="List of selected products"></a>
+                        </li>
+                    </ul> 
+                </nav> 
+                    
+            </header>
+        </section>
+        
+
+
+        <section id="pageProduct">
+            <!-- It will have the product to sell -->
+            <section class="imageSide">
+                <aside class="sideImages">
+                    <!-- small images on which the visitor can click -->
+                    <ul>
+                        <li><img src="assets/sp1.png" alt="The top view of the speaker"></li>
+                        <li><img src="assets/sp5.jpg" alt="The front view of the speaker"></li>
+                        <li><img src="assets/sp3.png" alt="The image display the lenght of the cable"></li>
+                        <li><video poster="assets/sThumbnail.png" class="wVideo">
+                            <source src="assets/speaker1.mp4" type="video/mp4">
+                        </video> 
+                        <span class="playStyle">&#9654;</span></li>   
+                        
+                    </ul>
+                </aside>
+
+                <p id="imgDisplay">
+                    <span class="previous showArrow" >&#x3c;</span> 
+                    <img src="assets/sp1.png" alt="the product image in bigger size">
+                    <video controls class="pVideo">
+                        <source src="" type="video/mp4">
+                    </video>
+                    <span class="next showArrow"  >&#x3e;</span> 
+                    
+                </p>
+            </section>
+            <section id="spDesc">
+                <h2>Grey Speaker</h2>
+                <p class="price "><b>£30.00</b></p>
+                <hr>
+                <p >
+                    Meet the bests speaker from our collection which can be easily controlled with your voice. 
+                    Ask any question you want and get your answer in few seconds. Once connected to your phone, it can read your schedule, commute and reminders. 
+                    <br>It is compatible with most of the smart devices and fit in any of your favourite spots in your kitchen, living room, bedroom, or any other room. 
+                    <br><br><b >More information:</b>
+                    <ul >
+                        <li >Compatible with Android and iPhone.</li>
+                        <li >Bluetooth compatible.</li>
+                        <li >1 speaker (Grey).</li>
+                    </ul>                    
+                </p>
+                <section class="pQuantity" >
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" class="quantity" name="qNum" min="1" value="1">
+                    <button type="button" id="spAdd" value="30" >+ Add to basket</button>
+                </section>
+            </section>
+
+        </section>
+
+        <!-- code for zooming the picture -->
+        <section id="zoomBg">
+            <article id="zoomImage" class="c" >
+                <span class="previous showArrow " >&#x3c;</span> 
+                <img src="assets/sp1.png" alt="The zoomed image of the speaker" class="zImg">
+                <video controls class="pVideo zVideo" >
+                    <source src="" type="video/mp4">
+                </video></li>
+                <span class="next showArrow ">&#x3e;</span>
+
+                <p class="close"><img src="assets/close.png" alt="close window" title="close"></p>
+            
+                
+            </article>
+        </section>
+        
+
+        <!-- basket content-->
+        <aside id="basketCont">
+        
+            <section id="bContent">
+                <p id="title">
+                    Spend £60 to get free shipping
+                    <span>&times;</span>
+                </p>
+                <h3>Shopping Cart</h3>
+              
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity">2</p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                   </section>
+                 
+                   <p class="pPrice">£30</p> 
+                </article>
+
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity">2</p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                   </section>
+               
+                   <p class="pPrice">£30</p> 
+                </article>
+
+
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity">2</p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                   </section>
+                
+
+                   <p class="pPrice">£30</p> 
+                </article>
+
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity"></p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                    </section>
+                  
+                   <p class="pPrice">£30</p> 
+                </article>
+                <section id="basBottom">
+                    <article  class="checkout">
+                    <h3>Subtotal</h3>
+                    <p id="totalCart">£30</p>
+                    </article>
+
+                    <article id="checkButton">
+                        <button type="button" >Checkout </button>
+                    </article>
+                </section>
+
+
+            </section>
+        </aside>
+
+
+
+
+        <!-- footer  -->
+        <footer id="bottomPage" class="basketFooter">
+            <section id="footerContent">
+                <article id="ftLinks">
+                    <!--Links to other pages -->
+                    <ul >
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="watchPage.html" >Watch</a></li>
+                        <li><a href="cameraPage.html" >Camera</a></li>
+                        <li><a href="audioPage.html" >Speaker</a></li>
+                        <li><a href="headpPage.html" >Headphone</a></li>
+                       
+                    </ul>
+                </article>
+                <article id="author">
+                    <p><b>Author:</b>
+                        <br><br>Shivangi Prajapati,
+                        <br>Nottingham Trent University
+			            <br>n0909947@my.ntu.ac.uk
+                    </p>
+                </article>
+                <article id="socialMedia">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/NottinghamTrentUniversity?fref=ts" target="_blank">
+                        <img src="assets/facebook.png" alt="Facebook" title="Facebook">
+                    </a>
+                    <!-- Twitter-->
+                    <a href="https://twitter.com/TrentUni" target="_blank">
+                        <img src="assets/twitter.png"  alt="Twitter" title="Twitter">
+                    </a>
+                    <!-- Youtube-->
+                    <a href="https://www.youtube.com/user/NottinghamTrentUni" target="_blank">
+                        <img src="assets/youtube.png"  alt="Youtube" title="Youtube">
+                    </a>
+                    
+                    <!-- Instagram-->
+                    <a href="https://www.instagram.com/nottinghamtrentuni/" target="_blank">
+                        <img src="assets/instagram.png"  alt="Instagram" title="Instagram">
+                    </a>
+                    <!--Linkedin-->
+                    <a href="https://www.linkedin.com/edu/school?id=12658" target="_blank">
+                        <img src="assets/linkedin.png"  alt="Linkedin" title="Linkedin">
+                    </a>
+                    <!--Snapchat-->
+                    <a href="https://www.snapchat.com/add/trentuni" target="_blank">
+                        <img src="assets/snapchat.png"  alt="Snapchat" title="Snapchat">
+                    </a>
+                
+                </article>
+                
+            </section>
+            <p>&copy; ntu.ac.uk 2022 | Designed by Shivangi Prajapati</p>      
+
+        </footer>
+
+    </body>
+</html>

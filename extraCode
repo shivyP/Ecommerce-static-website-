@@ -1,0 +1,181 @@
+/*----Footer Sytling----*/
+
+
+
+#bottomPage{
+    /* background-color: aqua; */
+    font-family: sans-serif;
+    margin-top: 5%;
+    
+}
+
+#footerContent{
+    
+    /* background-color:aquamarine; */
+    width:75%;
+    margin:auto;
+    margin-top:1%;
+    display:grid;
+    grid-template-columns:repeat(5, auto);
+}
+#ftLinks{
+    /* border:1px solid yellow;
+    background-color:blueviolet; */
+    padding-top:10px;
+    
+}
+#ftLinks a:hover{
+    text-decoration: underline;
+    color:blue;
+}
+#ftLinks ul li{
+    
+    /* border:1px solid blueviolet;
+    background-color: violet; */
+    font-size:16px;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding:0.5%;
+    margin-left:1.3%;
+    margin:auto;
+}
+
+
+
+
+#author{
+    /* background-color: tomato; */
+    margin:0px auto;
+    padding-top:10px;
+    
+}
+
+#socialMedia{
+    /* background-color: turquoise; */
+    grid-column-start: 3;
+    grid-column-end: end;
+    margin:auto;
+
+}
+#socialMedia a img{
+   width:44px;
+   background-color: transparent;
+   margin:5px;
+}
+#socialMedia a img:hover{
+    transform: scale(1.1);
+    border-radius: 5px;
+    box-shadow:0px 9px 20px  #7E9EC9;
+ }
+
+footer >p{
+    /* grid-column-start: 1;
+    grid-column-end: end; */
+    text-align: center;
+    background-color: #87cefa;
+    border:2px solid lightskyblue5;
+    width:100%;
+    margin:15px auto 0px auto;
+    padding-top:2px;
+    /* height:25px;
+    padding-top:5px;
+    */
+}
+
+
+
+
+.dark{
+    background-color:black;
+    color:white;
+}
+
+.bar{
+    background-color: #87cefa;
+    border:2px solid lightskyblue5;
+    width:100%;
+    height:29px;
+    padding:0;
+    font-size:20px;
+    text-align: right;
+}
+.bar p{
+    margin-right:90px;
+    padding:0px;
+    
+    
+}
+.bar #blackBox, #whiteBox{
+    font-size:28px;
+    
+}
+.bar #whiteBox{
+    color:white;
+}
+
+
+
+
+
+/*---Navingation styling---*/
+
+/* the main container*/
+#topContent{
+    margin-top:1%;
+}
+#pageTop{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin-left:10%;
+    margin-right:10%;
+    font-family: Times New Roman, fontawesome;
+    font-variant: small-caps;
+    
+}
+
+.logo {
+    width:12%;
+}
+.access, .productPages{
+    margin:auto;
+
+}
+
+.productPages ul, .access ul{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px;  
+}
+
+.productPages{
+    margin-left: 5%;
+}
+
+/*requires a diffrent bottom padding beacuse of the image */
+.access ul li{
+    padding:1px 10px 0px 10px;
+    border-right: 1px solid black;
+    
+}
+.access{
+    float:right;
+    margin-right: -62px;
+    /* background-color: aqua; */
+}
+.access img {
+    width: 89%;
+    margin-top: 1px;
+    padding: 0px;
+}
+
+/*--------- add focus---------*/
+nav ul li:hover{
+    /*transform: scale(1.1,1.1); /*allowa to add focus on it */
+    /*box-shadow: 0px 8px 20px  #000000;*/
+    cursor: pointer;
+    background-color: bisque;
+}
+

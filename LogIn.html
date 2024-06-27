@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Log-in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="navigation.css" type="text/css"/>
+        <!--link rel="stylesheet" href="audioStyle.css" type="text/css"-->
+        <link rel="stylesheet" href="access.css" type="text/css">
+        <link rel="stylesheet" href="logStyle.css" type="text/css">
+        <link rel="stylesheet" href="mediaQuery.css" type="text/css"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Raleway:wght@100&display=swap" rel="stylesheet">
+ 
+
+
+
+
+        <script  type="text/javascript" src="accessibility.js" async></script>
+        <!-- <script  type="text/javascript" src="productPage.js" defer></script> -->
+        <script  type="text/javascript" src="basket.js" defer></script>
+        <script  type="text/javascript" src="userAccess.js" defer></script>
+        <script  type="text/javascript" src="mediaMobile.js" async></script>
+        <!-- <script  type="text/javascript" src="registration.js" defer></script> -->
+    </head>
+    <body class="c">
+        <section class="bar">
+            <p>
+                <a href="" id="increaseText">A+ |</a>
+                <a href="" id="resetText">A |</a>
+                <a href="" id="reduceText">A- |</a>
+                <a href="" id="blackBox">&#9632; </a>|
+                <a href="" id="whiteBox">&#9632; </a>
+            </p>
+        </section>
+        <section id="topContent">
+            <!--logo -->
+                
+            <header id="pageTop">  
+             
+                <img class="logo" src="assets/logo2.png" alt="Company's Logo QTEC"> 
+                <!-- in mobile view this will change to humburger -->
+                <p id="humSymbol"> &#9776;</p> 
+                <nav class="productPages">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="watchPage.html" >Watches</a></li>
+                        <li><a href="cameraPage.html" >Camera</a></li>
+                        <li><a href="audioPage.html" >Speaker</a></li>
+                        <li><a href="headpPage.html" >Headphone</a></li>
+                       
+                    </ul>            
+                </nav>
+                <nav class="access">
+                    <ul>
+                        <li><a href="signIn.html" >Sign in</a></li>
+                        <li class="presentPage"><a href="LogIn.html" >Log in</a></li>
+                        <li style="border:none;"><a href="#">
+                            <img class="cart" src="assets/cart.png" alt="List of selected products"></a>
+                        </li>
+                    </ul> 
+                </nav> 
+                    
+            </header>
+        </section>
+
+        <!-- sigin form -->
+      
+       <section id="logForm">
+             
+            <!--
+           <article class="bgdesign second">
+               <img src="assets/bg1.png">
+           </article> -->
+           <h3>Log in to your account</h3>
+           <form id="logFormCon">
+             <fieldset>
+                 <legend>Log-in</legend>
+               
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" required>
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password" required>
+                    <p id="sPass">&#x1F441;</p>
+                    <br>
+                   <button type="submit" id="logButton">Log-in</button>
+                    
+
+                
+             </fieldset>
+             <p id="msg" class="msg-accepted"></p>
+               
+           </form>
+          
+           <!--Image taken from :https://www.freepik.com/free-vector/mom-little-daughter-taking-selfie-together-using-smartphone-video-call-waving-hello-flat-illustration_11235748.htm#query=waving%20cartoon&position=6&from_view=search-->
+           <img src="assets/cartoon.jpg" alt="A image with two people welcoming the new user">
+          
+           <aside id="newUser">
+               <h4>New Customers</h4>
+               <p>Don't have an account?</p>
+               <button type="button" id="newPage">
+                   <input type="image" src="assets/nUser.png">Create a new account</button>
+           </aside>
+       </section>
+       
+        <!-- basket content -->
+        <aside id="basketCont" >
+        
+            <section id="bContent">
+                <p id="title">
+                    Spend £60 to get free shipping
+                    <span>&times;</span>
+                </p>
+                <h3>Shopping Cart</h3>
+              
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity">2</p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                   </section>
+                 
+                   <p class="pPrice">£30</p> 
+                </article>
+
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity">2</p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                   </section>
+               
+                   <p class="pPrice">£30</p> 
+                </article>
+
+
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity">2</p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                   </section>
+                
+
+                   <p class="pPrice">£30</p> 
+                </article>
+
+                <article  class="display">
+                    <img src="assets/cm2.png">
+                    <section >
+                        <p>Greay Speaker</p>
+                        <p class="numQuantity"></p>
+                        <input type="number" value="1" min="0" class="incQuantity">
+                    </section>
+                  
+                   <p class="pPrice">£30</p> 
+                </article>
+                <section id="basBottom">
+                    <article  class="checkout">
+                    <h3>Subtotal</h3>
+                    <p id="totalCart">£30</p>
+                    </article>
+
+                    <article id="checkButton">
+                        <button type="button" >Checkout </button>
+                    </article>
+                </section>
+
+
+            </section>
+        </aside>
+
+
+
+
+
+
+        <!-- footer  -->
+        <footer id="bottomPage" class="basketFooter ">
+            <section id="footerContent">
+                <article id="ftLinks">
+                    <!--Links to other pages -->
+                    <ul >
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="watchPage.html" >Watch</a></li>
+                        <li><a href="cameraPage.html" >Camera</a></li>
+                        <li><a href="audioPage.html" >Speaker</a></li>
+                        <li><a href="headpPage.html" >Headphone</a></li>
+                       
+                    </ul>
+                </article>
+                <article id="author">
+                    <p><b>Author:</b>
+                        <br><br>Shivangi Prajapati,
+                        <br>Nottingham Trent University
+			            <br>n0909947@my.ntu.ac.uk
+                    </p>
+                </article>
+                <article id="socialMedia">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/NottinghamTrentUniversity?fref=ts" target="_blank">
+                        <img src="assets/facebook.png" alt="Facebook" title="Facebook">
+                    </a>
+                    <!-- Twitter-->
+                    <a href="https://twitter.com/TrentUni" target="_blank">
+                        <img src="assets/twitter.png"  alt="Twitter" title="Twitter">
+                    </a>
+                    <!-- Youtube-->
+                    <a href="https://www.youtube.com/user/NottinghamTrentUni" target="_blank">
+                        <img src="assets/youtube.png"  alt="Youtube" title="Youtube">
+                    </a>
+                    
+                    <!-- Instagram-->
+                    <a href="https://www.instagram.com/nottinghamtrentuni/" target="_blank">
+                        <img src="assets/instagram.png"  alt="Instagram" title="Instagram">
+                    </a>
+                    <!--Linkedin-->
+                    <a href="https://www.linkedin.com/edu/school?id=12658" target="_blank">
+                        <img src="assets/linkedin.png"  alt="Linkedin" title="Linkedin">
+                    </a>
+                    <!--Snapchat-->
+                    <a href="https://www.snapchat.com/add/trentuni" target="_blank">
+                        <img src="assets/snapchat.png"  alt="Snapchat" title="Snapchat">
+                    </a>
+                
+                </article>
+                
+            </section>
+            <p>&copy; ntu.ac.uk 2022 | Designed by Shivangi Prajapati</p>      
+
+           
+            
+        </footer>
+
+
+
+
+
+
+    </body>
+</html>
